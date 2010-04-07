@@ -1,0 +1,10 @@
+<h1>Lista de Calles</h1>
+<table>
+  <th>Nombre</th>
+  <th>Precio</th>
+  <th>Total de Módulos</th>
+  <th>Módulos Disponibles</th>
+  <%= render :partial => 'street', :collection => @streets %>
+</table>
+<%= link_to 'Nueva calle', new_street_path %>
+

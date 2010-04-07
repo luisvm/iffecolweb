@@ -1,0 +1,8 @@
+<% form_for @street do |s| %>
+  <%= s.label :name, 'Nombre' %><%= s.text_field :name %><br>
+  <%= s.label :price, 'Precio' %><%= s.text_field :price %><br>
+  <%= s.label :modules, 'Total de Módulos' %><%= s.text_field :modules %><br>
+  <%= s.label :available, 'Módulos Disponibles' %><%= s.text_field :available %><br>
+  <%= submit_tag 'Guardar' %>
+<% end -%>
+
